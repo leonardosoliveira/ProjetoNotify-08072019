@@ -1,0 +1,265 @@
+body{
+  margin: 0;
+  display: grid;
+  grid-template-areas: "header" "section" "contact" "aside" "nav" "footer";
+  grid-template-rows: 550px 40vh 50vh 50vh 10vh 1vh;
+}
+
+header{
+  grid-area: header;
+  border-top: #4CAF50 20px solid;
+  background-image: url(img/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 530px;
+}
+
+.hand{
+  align-self: flex-end;
+}
+
+.hand img{
+  height: 430px;
+}
+
+.p1{
+  width: 27%;
+  justify-self: self-start;
+}
+
+.p1 h1{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 35pt;
+  font-weight: normal;
+  margin-bottom: 40px;
+  
+}
+
+header span{
+  color: #4CAF50;
+}
+
+.p1 .txt{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 14pt;
+}  
+
+.p1 .box{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.p1 .box a{
+  height: 40px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background .3s ease-in-out ;
+  margin: 15px 15px 0 0 ;
+}
+
+.p1 .box img{
+  height: 20px;
+  width: 20px;
+  padding: 10px 10px;
+}
+
+.p1 .box a:hover{
+  background: #4CAF50;
+}
+
+section{
+  grid-area: section;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+section div img{
+  background-color: #4CAF50;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+section div p{
+  color: gray;
+}
+
+.contact{
+  grid-area: contact;
+  background-color:  #e3e3e3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .box{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contact .box div{
+  width: 40%;
+  height: 325px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact .box div p{
+  color: gray;
+  margin: 15px 0;
+  line-height: 25px;
+}
+
+.contact .box div input{
+  padding: 15px 0 15px 20px;
+  border: 1px solid gray;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.contact .box div button{
+  padding: 16px 20px;
+  background-color: #4CAF50;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: -5px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s ease-in-out ;
+}
+
+.contact .box div button:hover{
+  background-color: rgb(52, 136, 55);
+}
+aside{
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  height: 177px;
+}
+
+aside div{
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+aside span{
+  margin-top: 0px
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  font-weight: bolder;
+  color: black;
+}
+
+
+.sharingan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.sharingan img{
+  padding: 2px;
+  
+}
+
+.sharingan img:hover{
+  background-color: rgb(52, 136, 55);
+}
+
+nav{
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social{
+  margin-top: -186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 185px;
+}
+.social div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social p{
+  width: 38%;
+  margin: 15px 0;
+  padding: 0px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social h2{
+  color: black;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social img{
+  padding: 10px;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background .3s ease-in-out ;
+}
+
+.social img:hover{
+  background: #4CAF50;
+}
+footer{
+    grid-area: footer;
+    background-color: #e3e3e3;
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+   
+}
+.final {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  text-decoration: none;
+}
+footer a{
+  margin: 0 20px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+  transition: color .3s ease-in-out ;
+}
+
+footer a:hover{
+  color: #4CAF50;
+}
